@@ -1,0 +1,46 @@
+#include <iostream>
+#include <deque>
+using namespace std;
+
+int main() {
+
+    deque<int> d = {10, 20, 30};
+
+    // 🔹 push_back(val)
+    d.push_back(40);     
+    // 10 20 30 40
+
+    // 🔹 push_front(val)
+    d.push_front(5);     
+    // 5 10 20 30 40
+
+    // 🔹 pop_back()
+    d.pop_back();        
+    // 5 10 20 30
+
+    // 🔹 pop_front()
+    d.pop_front();       
+    // 10 20 30
+
+    // 🔹 at(index)
+    cout << "Element at index 1: " << d.at(1) << endl;
+    // 20
+
+    // 🔹 front()
+    cout << "First element: " << d.front() << endl;
+    // 10
+
+    // 🔹 back()
+    cout << "Last element: " << d.back() << endl;
+    // 30
+
+    // 🔹 size()
+    cout << "Size: " << d.size() << endl;
+
+    cout << "Final Deque: ";
+    for(int val : d){
+        cout << val << " ";
+    }
+
+    return 0;
+}
