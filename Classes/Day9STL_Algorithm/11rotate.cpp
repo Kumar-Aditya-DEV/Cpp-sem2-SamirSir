@@ -7,7 +7,7 @@ int main() {
     vector<int> scores = {85, 90, 78, 92, 88};
 
     // Rotate the vector so that the second element comes first
-    rotate(scores.begin(), scores.begin() + 1, scores.end());
+    rotate(scores.begin(), scores.begin() + 1, scores.end());        // ya pr jitne no. inc karo ge utne no. se start hoga value 
 
     cout << "Rotated scores: ";
     for (const auto& score : scores) {
